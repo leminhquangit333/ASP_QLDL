@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Travel VN</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="head" style="position: fixed; top: 0px; bottom: auto; left: 0px; width: 1519.2px; z-index: 10;">
+        <!-- Top-header -->
+        <div class="top-header">
+            <div class="wrap">
+                <div class="top-header-left">
+                    <div class="support-phone">
+                        <span class="hotline">Hotline:</span>
+                        <span class="num">1900 1006</span>
+                    </div>
+                </div>
+                <div class="top-header-right">
+                    <ul>
+                        <li><a href="#" class="btn-login-hd">Đăng Nhập</a></li>
+                        <li><a href="#" class="btn-signup-hd">Đăng Ký</a></li>
+                        <li>
+                            <input type="text" class="search-txt" placeholder="Tour du lịch, Điểm đến..." />
+                            <img src="img/i-search-mini.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End-Top-header -->
+
+        <div class="header">
+            <div class="wrap">
+                <!-- Start-logo -->
+                <div class="logo">
+                    <a href="trangchu.html"><img src="img/logo.png" title="voyage" /></a>
+                </div>
+                <!-- End-logo -->
+
+                <!-- Start-Header -->
+                <div class="header-nav">
+                    <ul class="flexy-menu thick orange">
+                        <li><a href="home.html">Trang chủ</a></li>
+                        <li class="active"><a href="danhsachtour.html">Danh sách Tour</a>
+                        <li><a href="tintucdulich.html">Tin tức du lịch</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End-Head -->
+
+    <!-- start-content -->
+    <div class="container n3-list-tour mg-bot40">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="list-tour">
+                    <!-- start-search -->
+                    <div class="sort-tour" id="sortHeader">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-5 col-xs-12 mgbs" style="margin-left: 10px;">
+                                <div>
+                                    <div class="f-left title-sort" style="margin-right: 10px;padding-top: 8px;"><span
+                                            class=""><i
+                                                class="fa fa-map-signs i-i"></i>&nbsp;&nbsp;&nbsp;</span>Nơi khởi hành
+                                    </div>
+                                    <div class="f-left">
+                                        <select class="form-control Filter" id="departureIDFilter" name="DepartureId"
+                                            style="width:132px;" data-url="departureID">
+                                            <option value="0">--Tất cả--</option>
+                                            <option selected="" value="1"> Hồ Chí Minh</option>
+                                            <option value="7">Bình Dương</option>
+                                            <option value="18">Buôn Ma Thuột</option>
+                                            <option value="20">Cà Mau</option>
+                                            <option value="5">Cần Thơ</option>
+                                            <option value="24">Đà Lạt</option>
+                                            <option value="4">Đà Nẵng</option>
+                                            <option value="3">Hà Nội</option>
+                                            <option value="6">Hải Phòng</option>
+                                            <option value="10">Huế</option>
+                                            <option value="14">Long Xuyên</option>
+                                            <option value="8">Nha Trang</option>
+                                            <option value="13">Phú Quốc</option>
+                                            <option value="17">Quảng Ninh</option>
+                                            <option value="11">Quy Nhơn</option>
+                                            <option value="22">Rạch Giá</option>
+                                            <option value="19">Vinh</option>
+                                            <option value="16">Vũng Tàu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="col-lg-3 text-left mgbs">
+                                <div class="f-left">
+                                    <div class="f-left title-sort" style="padding-top: 8px;margin-right: 10px;"><span
+                                            class=""><i
+                                                class="fa fa-dollar i-i"></i>&nbsp;&nbsp;&nbsp;</span>Giá</div>
+                                    <div class="f-left">
+                                        <select class="form-control Filter" id="priceIDFilter" name="priceID"
+                                            data-url="priceID">
+                                            <option selected="" value="0">--Tất cả--</option>
+                                            <option value="25">Dưới 1 Triệu</option>
+                                            <option value="26"> 1- 2 Triệu</option>
+                                            <option value="27"> 2-4 Triệu</option>
+                                            <option value="28"> 4-6 Triệu</option>
+                                            <option value="29"> 6-10 Triệu</option>
+                                            <option value="30">Trên 10 Triệu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-7 col-xs-12 mgb-date">
+                                <div style="display: table;">
+                                    <div class="f-left title-sort mgb-sort"
+                                        style="margin-right: 10px;padding-top: 8px;"><span
+                                            class=""><i
+                                                class="fa fa-calendar i-i"></i>&nbsp;&nbsp;&nbsp;</span>Từ ngày
+                                    </div>
+                                    <div class="f-left mgb-sort" style="margin-right: 10px;">
+                                        <input style="width: 115px;" data-url="DepartureDate"
+                                            class="form-control input-md hasDatepicker FilterClick2" autocomplete="off"
+                                            name="dateFrom" value="22/06/2021" placeholder="22/06/2021" type="text">
+                                    </div>
+                                    <div class="f-left mgb-sort" style="margin-right: 10px;padding-top: 10px;"><span
+                                            class="">-</span><span
+                                            class=""> đến ngày </span></div>
+                                    <div class="f-left ">
+                                        <input style="width: 115px;" data-url="DepartureDateTo"
+                                            class="form-control input-md hasDatepicker FilterClick2" autocomplete="off"
+                                            name="dateTo" value="22/07/2021" placeholder="22/07/2021" type="text">
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="show-ads" style="display:block;">
+                                <div class="col-lg-3 col-sm-4 text-left mgbs" style="margin-left: -18.5px;margin-top: 15px;">
+                                    <div class="f-left">
+                                        <div class="f-left title-sort" style="padding-top: 8px;margin-right: 10px;">
+                                            <span class=""><i
+                                                    class="fa fa-subway i-i"></i>&nbsp;&nbsp;&nbsp;</span>Vận chuyển
+                                        </div>
+                                        <div class="f-left">
+                                            <select class="form-control Filter" name="TranType" id="TranType"
+                                                data-url="TranType" style="width:132px;">
+                                                <option value="0">--Tất cả--</option>
+                                                <option value="2">Máy bay</option>
+                                                <option value="1">Ô tô</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4 text-left mgbs" style="margin-left:15px;margin-top: 15px;">
+                                    <div class="f-left">
+                                        <div class="f-left title-sort" style="padding-top: 8px;margin-right: 10px;">
+                                            <span class=""><i
+                                                    class="fa fa-suitcase i-i"></i>&nbsp;&nbsp;&nbsp;</span>Tình trạng
+                                        </div>
+                                        <div class="f-left">
+                                            <select class="form-control Filter" name="ConCho" id="ConCho"
+                                                data-url="ConCho" style="width:134px;">
+                                                <option value="-1">--Tất cả--</option>
+                                                <option value="1" selected="">Còn chỗ</option>
+                                                <option value="0">Hết chỗ</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4 text-left mgbs" style="margin-left:14.5px;margin-top: 15px;">
+                                    <div class="f-left">
+                                        <div class="f-left title-sort" style="margin-right: 10px;padding-top: 8px;">
+                                            <span class=""><i
+                                                    class="fa fa-spinner i-i"></i>&nbsp;&nbsp;&nbsp;</span>Dòng tour
+                                        </div>
+                                        <div class="f-left">
+                                            <select class="form-control Filter" name="DongTour" id="DongTour"
+                                                data-url="DongTour">
+                                                <option value="0" selected="">--Tất cả--</option>
+                                                <option value="1">Cao cấp</option>
+                                                <option value="2">Tiêu chuẩn</option>
+                                                <option value="3">Tiết kiệm</option>
+                                                <option value="4">Giá Tốt</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="col-lg-3 search-list">
+                                    <div class="f-left">
+                                        <div class="f-left">
+                                            <span class=""><a href="#" class="btn-search">Tìm Kiếm</a></span>
+                                        </div>                                     
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end-search -->
+
+
+                    <div class="list">
+                        <div class="row">
+                            <div class="col-md-12 text-center" style="padding-bottom:25px;padding-top:20px;width:100%">
+                                <h2 class="title" style="text-shadow:none;">Tour hot trong nước</h2>
+                            </div>
+                            <div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-11 col-sm-12 item-tour">
+                                    <div class="item mg-bot30">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="tour-name">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                        <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                                <div class="pos-relative">
+                                                    <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                        title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                            src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                            class="img-responsive pic-lt"
+                                                            alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 info-items">
+                                                <div class="frame-info pos-relative">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-code.png"
+                                                                    alt="code">
+                                                            </div>
+                                                            <div class="f-left r">Mã tour: M42-018-230621</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-chair.png"
+                                                                    alt="chair"></div>
+                                                            <div class="f-left r">
+                                                                Số chỗ còn nhận: <span class="font500">9</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-date.png"
+                                                                    alt="date">
+                                                            </div>
+                                                            <div class="f-left r">Ngày đi: <span
+                                                                    class="font500">23/06/2021</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-clock.png"
+                                                                    alt="clock"></div>
+                                                            <div class="f-left r">Giờ đi: <span
+                                                                    class="font500">05:30</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-price.png"
+                                                                    alt="price"></div>
+                                                            <div class="f-left r">
+                                                                Giá:
+                                                                <span class="font500 price">5,990,000 đ</span>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <div class="f-left l"><img src="img/i-calendar.png"
+                                                                    alt="date"></div>
+                                                            <div class="f-left r">Số ngày: <span
+                                                                    class="font500">5</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="col-md-7 col-sm-7 mg-bot10">
+                                                            <div class="f-left l"><img src="img/i-dep.png"></div>
+                                                            <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                                    Hồ Chí
+                                                                    Minh</span></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-content -->
+
+    <!-- start-pagination-->
+    <div class="small-container-pagination">
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+    </div>
+    <!-- end-pagination-->
+
+    <!-- Start-footer -->
+    <div id="footer">
+        <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about">
+                <h2>Về Chúng Tôi</h2>
+                <p>Responsible travel has always been at the core of what we do.
+                    Travelling with us means not just better trips for you, it’s better for local communities,
+                    better for wildlife and better for the planet.</p>
+                <ul class="social-icon">
+                    <li><a href=""><img src="img/ic-fb.png" alt=""></a></li>
+                    <li><a href=""><img src="img/ic-ins.png" alt=""></a></li>
+                    <li><a href=""><img src="img/ic-tw.png" alt=""></a></li>
+                    <li><a href=""><img src="img/ic-yt.png" alt=""></a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+            <div class="noi-dung links">
+                <h2>Đường Dẫn</h2>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Danh sách Tour</a></li>
+                    <li><a href="#">Tin tức du lịch</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>Đường Số xxx, Quận xxx<br />
+                            Thành Phố xxx, Việt Nam</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 123 xxx xxx</a>
+                            <br />
+                            <a href="#">+84 456 xxx xxx</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">xxx@gmail.com</a></p>
+                    </li>
+                    <!-- <li>
+                            <form class="form">
+                                <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                                <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                            </form>
+                        </li> -->
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+        </div>
+        <div class="bottom-footer">
+            <hr />
+            <p class="copyright text-center" style="text-align: center;">&#169;copyright 2021 - G1 Website Tour
+                <br>
+                Nguyễn Phước Thiên An - Trần Văn An - Đỗ Huỳnh Duy Linh
+                <br>
+                Lê Minh Quang - Phạm Lê Thanh Nga
+            </p>
+        </div>
+    </div>
+    <!-- End-footer -->
+</body>
+
+</html>
