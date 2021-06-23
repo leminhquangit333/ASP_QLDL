@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style-type: none;
     font-size: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -175,12 +174,12 @@ a {
 	display: inline-block;
 }
 
-.btn-signup-hd {
+.btn-signup-hd, .btn-cart {
     color: rgb(3, 3, 3);
     padding: 0 15px;
 }
 
-.btn-signup-hd:hover {
+.btn-signup-hd:hover, .btn-cart:hover {
 	text-decoration: none;
     background-color: #ff5722;
     border-radius: 20px;
@@ -198,7 +197,9 @@ a {
 .btn-login-hd:hover {
     background-color: #db4b1f;
     text-decoration: none;
+    color: #fff;
 }
+
 /*-- End-top-header --*/
 
 /*-- Start-header --*/
@@ -273,6 +274,35 @@ a {
 	border:0;
 	font-size:12px;
 }
+/*-- After-login --*/
+.top-header-right .btn-group .btn-user {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.top-header-right .btn-group .btn-user:focus {
+    border: none;
+}
+
+.top-header-right .btn-group .avatar-user {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* .top-header-right .btn-group .avatar-user:hover {
+    border: 1px solid rgb(0, 0, 0);
+} */
+
 /*-- End-header --*/
 
 /*-- start-Slideshow --*/
@@ -627,7 +657,8 @@ p{ margin: 0;}
 .col-md-5,
 .col-lg-5,
 .col-sm-5,
-.col-md-6 {
+.col-md-6,
+.col-sm-6 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -914,6 +945,497 @@ a {
 
 /*-- End-list-tour --*/
 
+/*-- Start-Tour-Detail --*/
+.main-container {
+    
+}
+
+
+ /* Slideshow container */
+ .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+  }
+  /* Ẩn các slider */
+  .mySlides {
+      display: none;
+  }
+  /* Định dạng nội dung Caption */
+  .title-tour-detail {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* định dạng các chấm chuyển đổi các slide */
+  .dot {
+    position: relative;
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  /* khi được hover, active đổi màu nền */
+  .active-dot, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.content-detail {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+.main-info {
+    width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.markdown-container{
+    padding-top: 24px;
+    margin-bottom: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.activity-markdown.markdown-content {
+    line-height: 1.44;
+}
+
+.markdown-content {
+    font-size: 14px;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.markdown-containe .markdown-content ul {
+    list-style-type: disc;
+}
+
+.markdown-content ol, .markdown-content ul {
+    margin-bottom: 0;
+    padding-left: 14px;
+}
+
+.activity-markdown.markdown-content li, .activity-markdown.markdown-content p {
+    padding-bottom: 12px;
+}
+
+.page-activity-section-title {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 40px 0 0 16px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    color: #333;
+    border-top: 1px solid #eee;
+}
+
+.page-activity-section-title .activity-section-title {
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.page-activity-section-title:after {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 5px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: #ff5722;
+}
+
+.activity-package-options {
+    position: relative;
+    padding: 40px;
+    background-color: #f0f6f9;
+}
+
+.package-options-content {
+    margin-top: 5px;
+}
+
+.package-options-content-title {
+    line-height: 18px;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.booking-options-units-tips {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.booking-options-units-tips .booking-options-units-tips_content {
+    font-size: 12px;
+    line-height: 16px;
+    color: #666;
+}
+
+.booking-options-units-tips .booking-options-units-tips_content .max_pax, .booking-options-units-tips .booking-options-units-tips_content .min_pax {
+    color: #ff5722;
+}
+
+.package-detail-counter {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.package-detail-counter .package-detail-top {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 16px 20px;
+    height: 68px;
+}
+
+.package-detail-counter .counter-left {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 295px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.package-detail-counter .counter-right {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff5722;
+    width: 148px;
+    height: 36px;
+}
+
+.package-detail-counter .counter-right .activity-counter {
+    display: -webkit-box;
+    display: flex;
+    margin-left: 24px;
+    color: #333;
+}
+
+.package-detail-counter .counter-right .activity-counter .counter-btn {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-right: 2px;
+}
+
+.package-detail-counter .counter-right .activity-counter .counter-disable {
+    cursor: not-allowed;
+    color: #ccc;
+    background-color: #f5f5f5;
+}
+
+.counter-btn {
+    display: inline-block;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.counter-btn i {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.package-detail-counter .counter-right .activity-counter .counter-count {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin: 0 8px;
+}
+
+.activity-package-options .options-btn {
+    margin-top: 40px;
+}
+
+.package-options-btnGroup {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    cursor: default;
+}
+
+.options-btnGroup-left {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.preview-sell-price {
+    font-weight: 700;
+}
+.preview-sell-price-from, .preview-sell-price {
+    font-size: 18px;
+    color: #333;
+}
+
+.preview-market-price {
+    font-size: 14px;
+    color: #999;
+}
+
+.attr-tip {
+    margin-top: 4px;
+}
+
+.options-btnGroup-right .in-house-btn {
+    display: inline-block;
+}
+
+.options-btnGroup-right .add-cart {
+    color: #fff;
+    background-color: #ffa628;
+    margin: 0 14px;
+}
+
+.options-btnGroup-right .klk-button {
+    border: none;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+
+.klk-button-large {
+    min-width: 86px;
+    line-height: 22px;
+    font-size: 16px;
+    padding: 12px 24px;
+}
+.options-btnGroup-right .order-tour {
+    color: #fff;
+    background-color: #ff5722;
+    border: 1px solid #ff5722;
+}
+.klk-button {
+    min-width: 86px;
+    display: inline-block;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    line-height: 22px;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-transform: none;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.options-btnGroup-right .add-cart:hover {
+    background-color: #eb9a2a;  
+}
+
+.options-btnGroup-right .order-tour:hover {
+    background-color: #ee5020;
+}
+
+.page-activity-description-images .page-activity-description-image-desc {
+    margin-top: 20px;
+}
+
+.page-activity-description-images .page-activity-description-image-desc img {
+    width: 790px;
+}
+
+.page-activity-description-images .page-activity-description-image-desc .page-activity-description-desc i {
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    margin-right: 8px;
+    color: #666666;
+    font-size: 25px;
+}
+
+.page-activity-description-images .page-activity-description-image-desc .page-activity-description-desc {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: 1.6;
+    position: relative;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.mg-bot20 {
+    margin-bottom: 20px;
+}
+
+.main-container .tour-similar {
+    width: 1170px;
+    height: 324.8px;
+    margin-left: 12em;
+    margin-top: 3em;
+}
+
+.main-container .tour-similar img.pic-ttt {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #f4f4f4;
+}
+
+.main-container .tour-similar .frame-ttt1 {
+    position: absolute;
+    bottom: 0;
+    padding: 40px 10px 10px;
+    background: linear-gradient(to bottom,rgba(0,0,0,.01),#1b1b1b);
+    width: 100%;
+    color: #fff;
+}
+
+.main-container .tour-similar .frame-ttt1 .date {
+    margin-left: 8px;
+    padding-top: 3px;
+}
+
+.main-container .tour-similar .frame-ttt1 .yellow {
+    color: #ffc000;
+}
+
+.main-container .tour-similar .frame-ttt2 {
+    background: #f1f1f1;
+    padding: 10px;
+}
+
+.main-container .tour-similar .ttt-line {
+    border-bottom: 1px dashed #919191;
+    margin-bottom: 10px;
+}
+
+.main-container .tour-similar .ttt-info {
+    margin-left: 8px;
+    padding-top: 2px;
+    
+}
+
+.main-container .tour-similar .ttt-info .price-n {
+    color: #ff5722;
+    font-weight: 700;
+}
+
+.main-container .tour-similar .frame-ttt2 img {
+    padding-top: 5px;
+}
+
+.main-container .tour-similar .cut-ttt {
+    width: 100%;
+    height: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.main-container .tour-similar .cut-ttt:hover {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+
+.main-container .tour-similar .ttt-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.main-container .tour-similar .ttt-line {
+    border-bottom: 1px dashed #919191;
+    margin-bottom: 10px;
+}
+
+.main-container .tour-similar .title-ft {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/*-- End-Tour-Detail --*/
+
 /* Contact form */
 .contact-content{
     margin-top: 48px;
@@ -956,6 +1478,7 @@ a {
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-size: 100%;
+    margin-top: 10px;
 }
 #footer .container{
     display: flex;
