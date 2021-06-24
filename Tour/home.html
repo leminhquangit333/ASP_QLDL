@@ -51,10 +51,10 @@
                 <!-- Start-Header -->
                 <div class="header-nav">
                     <ul class="flexy-menu thick orange">
-                        <li class="active"><a href="trangchu.html">Trang chủ</a></li>
+                        <li class="active"><a href="home.html">Trang chủ</a></li>
                         <li><a href="danhsachtour.html">Danh sách Tour</a>
                         <li><a href="tintucdulich.html">Tin tức du lịch</a></li>
-                        <li><a href="tintucdulich.html">Liên Hệ</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,12 +63,18 @@
     <!-- End-Head -->
 
     <!-- Start-slide-show -->
-    <div id="slideshow">
-        <div class="slide-wrapper">
-            <div class="slide"><img src="img/travel4.jpg"></div>
-            <div class="slide"><img src="img/travel5.jpg"></div>
-            <div class="slide"><img src="img/travel6.jpg"></div>
-        </div>
+    <div class="slide">
+        <div class="dieuhuong">
+			<i class="fa fa-chevron-circle-left" onclick="Back();"></i>
+			<i class="fa fa-chevron-circle-right" onclick="Next();"></i>
+		</div>
+		<div class="chuyen-slide">
+			<img src="img/travel4.jpg"> // 0
+			<img src="img/travel5.jpg"> // 1000
+			<img src="img/travel6.jpg"> // 2000
+			<img src="img/travel7.jpg"> // 3000
+			<img src="img/travel8.jpg"> // 4000
+		</div>
         <div class="main-banner-title">
             <h1>TỰ DO KHÁM PHÁ </h1>
             <h2>Khám phá và đặt các hoạt động du lịch đặc sắc với giá độc quyền </h2>
@@ -359,6 +365,7 @@
         </div>
     </div>
     <!-- End-footer -->
+    <script type="text/javascript" src="js/slide.js"></script>
 </body>
 
 </html>

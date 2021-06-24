@@ -308,51 +308,33 @@ a {
 /*-- start-Slideshow --*/
 
 /* Slideshow container */
-#slideshow {
+
+.slide{
+    width: 1000px;
+    margin: 0 auto;
     overflow: hidden;
-    height: 480px;
-    width: 1520px;
-    margin-top: 6em;
+    margin-top: 7em;
+    position: relative;
   }
-
-  .slide-wrapper {
-    width: 5226px;
-    -webkit-animation: slide 14s ease infinite;
+  .chuyen-slide{
+    width: 9999px;
+    transition: all 0.5s;
   }
-
-  .slide {
-    float: left;
-    height: 480px;
-    width: 1520px;
+  .chuyen-slide  img{
+    width: 1000px;
+    height: 400px;
+    float:left;
   }
-
-  .slide img {
-    width: 1520;
-    height: auto;
+  .dieuhuong{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    top: 48%;
+    padding-left: 20px;
   }
-
-
-
-  @-webkit-keyframes slide {
-    20% {
-      margin-left: 0px;
-    }
-
-    30% {
-      margin-left: -1520px;
-    }
-
-    50% {
-      margin-left: -1520px;
-    }
-
-    60% {
-      margin-left: -3400px;
-    }
-
-    80% {
-      margin-left: -3400px;
-    }
+  .dieuhuong i:last-child{
+    position: relative;
+    left: 880px;
   }
 
   .main-banner-title {
@@ -361,7 +343,7 @@ a {
     position: absolute;
     width: 100%;
     text-align: center;
-    margin-top: 8em;
+    margin-top: 6em;
   }
 
   .main-banner-title h1 {
@@ -377,14 +359,14 @@ a {
   }
   .banner-search {
     background-color: white;
-    width: 51.5%;
+    width: 58.5%;
     height: 56px;
     margin: 5px auto 5px auto;
     border-radius: 5px;
   }
 
   .banner-search .banner-txt-search{
-    width: 600px;
+    width: 400px;
     border-radius: 0;
     border: none;
     height: 50px;
@@ -1649,6 +1631,6 @@ a {
 /*-- End-Footer --*/
 @media screen and (max-width: 1527px){
     .banner-search .banner-btn {
-        display: none;
+       width: 70px;
     }
 }
