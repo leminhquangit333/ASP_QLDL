@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Travel VN</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(247, 247, 247);">
+    <!-- Header -->
+    <div class="head" style="position: fixed; top: 0px; bottom: auto; left: 0px; width: 1519.2px; z-index: 10;">
+        <!-- Top-header -->
+        <div class="top-header">
+            <div class="wrap">
+                <div class="top-header-left">
+                    <div class="support-phone">
+                        <span class="hotline">Hotline:</span>
+                        <span class="num">1900 1006</span>
+                    </div>
+                </div>
+                <div class="top-header-right">
+                    <ul>
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-user" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <img src="../img/avatar.png" class="avatar-user" />
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="manage_info-after.html">Tài Khoản Của Tôi</a>
+                                    <a class="dropdown-item" href="order-all-after.html">Đơn Mua</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Đăng Xuất</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" class="btn-cart">Giỏ Hàng</a></li>
+                        <li>
+                            <input type="text" class="search-txt" placeholder="Tour du lịch, Điểm đến..." />
+                            <img src="../img/i-search-mini.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End-Top-header -->
+
+        <div class="header">
+            <div class="wrap">
+                <!-- Start-logo -->
+                <div class="logo">
+                    <a href="../home.html"><img src="../img/logo.png" title="voyage" /></a>
+                </div>
+                <!-- End-logo -->
+
+                <!-- Start-Header -->
+                <div class="header-nav">
+                    <ul class="flexy-menu thick orange">
+                        <li><a href="../home.html">Trang chủ</a></li>
+                        <li><a href="../danhsachtour.html">Danh sách Tour</a>
+                        <li><a href="../news-tour.html">Tin tức du lịch</a></li>
+                        <li><a href="../contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End-Head -->
+
+    <!-- Start-Content-->
+    <div id="app">
+        <section class="g_main margin-top-0">
+            <!-- Start-Side-Left -->
+            <ul class="sidebar g_left j_side_menu">
+                <li>
+                    <div class="profile_box g_rel">
+                        <div class="profile_avatar">
+                            <label for="avatar">
+                                <span class="klook-symbol t28 g_v_c_mid camera"><i class="fa-camera"
+                                        aria-hidden="true"></i></span>
+                            </label>
+                            <input type="file" name="avatar" id="avatar" class="f_hidden"
+                                accept="image/png, image/jpg, image/jpeg">
+                            <img width="100" height="100" class="avatar_url" src="../img/avatar.png" alt="">
+                            <div class="profile-loading f_hidden"><i></i></div>
+                        </div>
+                        <h3>aaaaaaaaaaaa</h3>
+                    </div>
+                    <div class="entrances_box">
+                        <div class="entrances_box_hover">
+                            <a href="manage_info-after.html">
+                                <span>Quản lý thông tin</span>
+                            </a>
+                        </div>
+                        <div class="entrances_box_hover">
+                            <a href="order-all-after.html">
+                                <span class="active-profile">Đơn hàng</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- End-Side-Left -->
+
+            <!-- Start-Booking-List-Tour -->
+            <div class="user_center-content g_rel g_right">
+
+                <!-- Start-Side-Bar-Top-->
+                <div class="bookings-container">
+                    <div class="booking-list">
+                        <a class="booking-item booking-active" href="order-all-after.html"><span class="booking-label">Tất
+                                cả</span></a>
+                        <a class="booking-item" href="order-wait-after.html"><span class="booking-label">Chờ xác
+                                nhận</span></a>
+                        <a class="booking-item" href="ordered-afer.html"><span class="booking-label">Đã thanh toán</span></a>
+                        <a class="booking-item" href="order-cancel-after.html"><span class="booking-label">Đã Hủy</span></a>
+                    </div>
+                </div>
+                <!-- End-Side-Bar-Top-->
+
+                <!-- Start-List-Booking-->
+                <div class="booking-tour-list">
+                    <div>
+                        <div class="col-sm-12 item-booking-tour">
+                            <div class="item mg-bot30">
+                                <div class="row">
+                                    <div class="container-name">
+                                        <div class="booking-tour-name">
+                                            <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                            </a>
+                                            <div class="booking-status">Đã thanh toán</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                        <div class="pos-relative">
+                                            <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                    src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                    class="img-responsive pic-lt"
+                                                    alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                        </div>
+                                    </div>
+                                    <div class="info-items">
+                                        <div class="frame-info pos-relative">
+                                            <div class="row">
+                                                <div class="info-booking-left mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-code.png" alt="code">
+                                                    </div>
+                                                    <div class="f-left r">Mã tour: <span class="code-value">M42-018-230621</span></div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-chair.png" alt="chair">
+                                                    </div>
+                                                    <div class="f-left r">
+                                                        Phương tiện: <span class="font500">Xe khách</span>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="info-booking-left mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-date.png" alt="date">
+                                                    </div>
+                                                    <div class="f-left r">Ngày đi: <span
+                                                            class="font500">23/06/2021</span></div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-clock.png" alt="clock">
+                                                    </div>
+                                                    <div class="f-left r">Giờ đi: <span class="font500">05:30</span>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="info-booking-left mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-price.png" alt="price">
+                                                    </div>
+                                                    <div class="f-left r">
+                                                        Giá:
+                                                        <span class="font500 price">5,990,000 đ</span>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="">
+                                                    <div class="f-left l"><img src="../img/i-calendar.png" alt="date">
+                                                    </div>
+                                                    <div class="f-left r">Số ngày: <span class="font500">5</span></div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="info-booking-left mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-dep.png"></div>
+                                                    <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                            Hồ Chí
+                                                            Minh</span></div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="area-bot">
+                                <div class="bot-booking bot1"> </div>
+                                <div class="bot-booking bot2"> </div>
+                            </div>
+                            <div class="type-money">
+                                <div class="total-type-money">
+                                    <div class="name-type">Người lớn:</div>
+                                    <div class="type-price">242.400₫</div>
+                                    <div class="multi-sign">x</div>
+                                    <div class="amount">3</div>                                   
+                                    <div class="total-type-price">242.400₫</div>
+                                </div>
+                            </div>
+                            <div class="type-money">
+                                <div class="total-type-money">
+                                    <div class="name-type">Trẻ em:</div>
+                                    <div class="type-price">242.400₫</div>
+                                    <div class="multi-sign">x</div>
+                                    <div class="amount">3</div>
+                                    <div class="total-type-price">242.400₫</div>
+                                </div>
+                            </div>
+                            <div class="type-money">
+                                <div class="total-type-money">
+                                    <div class="name-type">Tổng số tiền:</div>
+                                    <div class="total-money total-type-price">242.400₫</div>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                    <div>
+                        <div class="col-sm-12 item-booking-tour">
+                            <div class="item mg-bot30">
+                                <div class="row">
+                                    <div class="container-name">
+                                        <div class="booking-tour-name">
+                                            <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn">
+                                                <h3>Quy Nhơn - Hội An - Đà Nẵng - Huế - Quy Nhơn</h3>
+                                            </a>
+                                            <div class="booking-status">Đang chờ xác nhận</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 item-img">
+                                        <div class="pos-relative">
+                                            <a href="/tourM42-018-230621/quy-nhon-hoi-an-da-nang-hue-quy-nhon.aspx"
+                                                title="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"><img
+                                                    src="https://media.travel.com.vn/destination/tf_200811025622_498694.jpg"
+                                                    class="img-responsive pic-lt"
+                                                    alt="Quy Nhơn  - Hội An - Đà Nẵng - Huế - Quy Nhơn"></a>
+                                        </div>
+                                    </div>
+                                    <div class="info-items">
+                                        <div class="frame-info pos-relative">
+                                            <div class="row">
+                                                <div class="info-booking-left mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-code.png" alt="code">
+                                                    </div>
+                                                    <div class="f-left r">Mã tour: <span class="code-value">M42-018-230621</span></div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-chair.png" alt="chair">
+                                                    </div>
+                                                    <div class="f-left r">
+                                                        Phương tiện: <span class="font500">Xe khách</span>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="info-booking-left mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-date.png" alt="date">
+                                                    </div>
+                                                    <div class="f-left r">Ngày đi: <span
+                                                            class="font500">23/06/2021</span></div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-clock.png" alt="clock">
+                                                    </div>
+                                                    <div class="f-left r">Giờ đi: <span class="font500">05:30</span>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="info-booking-left mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-price.png" alt="price">
+                                                    </div>
+                                                    <div class="f-left r">
+                                                        Giá:
+                                                        <span class="font500 price">5,990,000 đ</span>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="">
+                                                    <div class="f-left l"><img src="../img/i-calendar.png" alt="date">
+                                                    </div>
+                                                    <div class="f-left r">Số ngày: <span class="font500">5</span></div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <div class="info-booking-left mg-bot10">
+                                                    <div class="f-left l"><img src="../img/i-dep.png"></div>
+                                                    <div class="f-left r">Nơi khởi hành: <span class="font500">
+                                                            Hồ Chí
+                                                            Minh</span></div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="area-bot">
+                                <div class="bot-booking bot1"> </div>
+                                <div class="bot-booking bot2"> </div>
+                            </div>
+                            <div class="type-money">
+                                <div class="total-type-money">
+                                    <div class="name-type">Người lớn:</div>
+                                    <div class="type-price">242.400₫</div>
+                                    <div class="multi-sign">x</div>
+                                    <div class="amount">3</div>
+                                    <div class="total-type-price">242.400₫</div>
+                                </div>
+                            </div>
+                            <div class="type-money">
+                                <div class="total-type-money">
+                                    <div class="name-type">Trẻ em:</div>
+                                    <div class="type-price">242.400₫</div>
+                                    <div class="multi-sign">x</div>
+                                    <div class="amount">3</div>
+                                    <div class="total-type-price">242.400₫</div>
+                                </div>
+                            </div>
+                            <div class="type-money">
+                                <div class="total-type-money">
+                                    <div class="name-type">Tổng số tiền:</div>
+                                    <div class="total-money total-type-price">242.400₫</div>
+                                </div>
+                            </div>
+                            <div class="cancel-booking-tour">
+                                    <div class="button-cancel-booking">
+                                        <button class="btn-cancel-booking">Hủy Tour</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End-List-Booking-->
+            </div>
+            <!-- End-Booking-List-Tour -->
+        </section>
+    </div>
+    <!-- End-Content-->
+
+    <!-- Start-footer -->
+    <div id="footer">
+        <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about">
+                <h2>Về Chúng Tôi</h2>
+                <p>Responsible travel has always been at the core of what we do.
+                    Travelling with us means not just better trips for you, it’s better for local communities,
+                    better for wildlife and better for the planet.</p>
+                <ul class="social-icon">
+                    <li><a href=""><img src="../img/ic-fb.png" alt=""></a></li>
+                    <li><a href=""><img src="../img/ic-ins.png" alt=""></a></li>
+                    <li><a href=""><img src="../img/ic-tw.png" alt=""></a></li>
+                    <li><a href=""><img src="../img/ic-yt.png" alt=""></a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+            <div class="noi-dung links">
+                <h2>Đường Dẫn</h2>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Danh sách Tour</a></li>
+                    <li><a href="#">Tin tức du lịch</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>Đường Số xxx, Quận xxx<br />
+                            Thành Phố xxx, Việt Nam</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 123 xxx xxx</a>
+                            <br />
+                            <a href="#">+84 456 xxx xxx</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">xxx@gmail.com</a></p>
+                    </li>
+                    <!-- <li>
+                            <form class="form">
+                                <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                                <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                            </form>
+                        </li> -->
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+        </div>
+        <div class="bottom-footer">
+            <hr />
+            <p class="copyright text-center" style="text-align: center;">&#169;copyright 2021 - G1 Website Tour
+                <br>
+                Nguyễn Phước Thiên An - Trần Văn An - Đỗ Huỳnh Duy Linh
+                <br>
+                Lê Minh Quang - Phạm Lê Thanh Nga
+            </p>
+        </div>
+    </div>
+    <!-- End-footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

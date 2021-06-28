@@ -1,0 +1,1 @@
+cái dashboard là admin khác biệt so với tour, vì vậy không gộp chung file css của dashboard vào file css chung cho toàn bộ Tour nha!!!!
