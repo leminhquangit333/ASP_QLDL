@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Travel VN</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="head" style="position: fixed; top: 0px; bottom: auto; left: 0px; width: 1519.2px; z-index: 10;">
+        <!-- Top-header -->
+        <div class="top-header">
+            <div class="wrap">
+                <div class="top-header-left">
+                    <div class="support-phone">
+                        <span class="hotline">Hotline:</span>
+                        <span class="num">1900 1006</span>
+                    </div>
+                </div>
+                <div class="top-header-right">
+                    <ul>
+                        <li><a href="#" class="btn-login-hd">Đăng Nhập</a></li>
+                        <li><a href="#" class="btn-signup-hd">Đăng Ký</a></li>
+                        <li>
+                            <input type="text" class="search-txt" placeholder="Tour du lịch, Điểm đến..." />
+                            <img src="img/i-search-mini.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End-Top-header -->
+
+        <!-- Start-Header -->
+        <div class="header">
+            <div class="wrap">
+                <!-- Start-logo -->
+                <div class="logo">
+                    <a href="home.html"><img src="img/logo.png" title="voyage" /></a>
+                </div>
+                <!-- End-logo -->
+
+                <!-- Start-Header -->
+                <div class="header-nav">
+                    <ul class="flexy-menu thick orange">
+                        <li class="active"><a href="home.html">Trang chủ</a></li>
+                        <li><a href="danhsachtour.html">Danh sách Tour</a>
+                        <li><a href="news-tour.html">Tin tức du lịch</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End-Header -->
+
+    <div class="container n3-contact">
+        <div class="row">
+            <div class="col-xs-12 mg-bot15">
+                <div class="title title-contact mg-bot15">
+                    <h1>LIÊN HỆ</h1>
+                </div>
+                <div class="text-center">Để có thể đáp ứng được các yêu cầu và các ý kiến đóng góp của quý vị một cách
+                    nhanh chóng xin vui lòng liên hệ</div>
+            </div>
+            <div class="col-xs-12 mg-bot50">
+                <form action="/StaticPage/SendEmail" id="SendEmail" method="post">
+                    <input name="__RequestVerificationToken" type="hidden">
+                    <div class="frame-contact">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mg-bot15">
+                                <label>Họ tên (<span class="star">*</span>)</label>
+                                <input type="text" class="form-control" required="required" name="txtHoTen"
+                                    id="txtHoTen">
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mg-bot15">
+                                <label>Email (<span class="star">*</span>)</label>
+                                <input type="email" class="form-control" required="required" name="txtEmail"
+                                    id="txtEmail">
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mg-bot15">
+                                <label>Điện thoại (<span class="star">*</span>)</label>
+                                <input type="text" class="form-control" required="required" name="txtDienThoai"
+                                    id="txtDienThoai">
+                            </div>
+                            <div class="col-xs-12 mg-bot15">
+                                <label>Địa chỉ</label>
+                                <input type="text" class="form-control" name="txtDiaChi">
+                            </div>
+                            <div class="col-xs-12 mg-bot15">
+                                <label>Tiêu đề (<span class="star">*</span>)</label>
+                                <input type="text" class="form-control" required="required" name="txtTieuDe">
+                            </div>
+                            <div class="col-xs-12 mg-bot30">
+                                <label>Nội dung (<span class="star">*</span>)</label>
+                                <textarea class="form-control" rows="4" cols="5" required="required"
+                                    name="txtNoiDung"></textarea>
+                            </div>
+                            <div class="col-xs-12 text-center">
+                                <button type="submit" class="btn-contact">Gửi đi</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Start-footer -->
+    <div id="footer">
+        <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about">
+                <h2>Về Chúng Tôi</h2>
+                <p>Responsible travel has always been at the core of what we do.
+                    Travelling with us means not just better trips for you, it’s better for local communities,
+                    better for wildlife and better for the planet.</p>
+                <ul class="social-icon">
+                    <li><a href=""><img src="img/ic-fb.png" alt=""></a></li>
+                    <li><a href=""><img src="img/ic-ins.png" alt=""></a></li>
+                    <li><a href=""><img src="img/ic-tw.png" alt=""></a></li>
+                    <li><a href=""><img src="img/ic-yt.png" alt=""></a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+            <div class="noi-dung links">
+                <h2>Đường Dẫn</h2>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Danh sách Tour</a></li>
+                    <li><a href="#">Tin tức du lịch</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>Đường Số xxx, Quận xxx<br />
+                            Thành Phố xxx, Việt Nam</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 123 xxx xxx</a>
+                            <br />
+                            <a href="#">+84 456 xxx xxx</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">xxx@gmail.com</a></p>
+                    </li>
+                    <!-- <li>
+                        <form class="form">
+                            <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                            <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                        </form>
+                    </li> -->
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+        </div>
+        <div class="bottom-footer">
+            <hr />
+            <p class="copyright text-center" style="text-align: center;">&#169;copyright 2021 - G1 Website Tour
+                <br>
+                Nguyễn Phước Thiên An - Trần Văn An - Đỗ Huỳnh Duy Linh
+                <br>
+                Lê Minh Quang - Phạm Lê Thanh Nga
+            </p>
+        </div>
+    </div>
+    <!-- End-footer -->
+    <script type="text/javascript" src="js/slide.js"></script>
+</body>
+
+</html>
